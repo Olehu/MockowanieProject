@@ -10,4 +10,10 @@ public interface UserManagmentService {
     Optional<User> findByEmail(String email);
 
     List<User> findAll();
+
+    void findByName(String name);
+
+    void update(String email, User withEmail);
+
+    void delete(String email);
 }

@@ -7,4 +7,6 @@ public interface UserManagmentRepository {
     Optional<User> findByEmail(String email);
 
     Object findAll();
+
+    void create(User user);
 }
