@@ -8,5 +8,5 @@ public interface UserManagmentRepository {
 
     Object findAll();
 
-    void create(User user);
+    void create(final User user);
 }

@@ -5,8 +5,8 @@ import lombok.Builder;
 import lombok.Value;
 import lombok.With;
 
-@Builder
 @Value
+@Builder
 @With
 public class User {
     String name;
@@ -14,5 +14,10 @@ public class User {
     String email;
 
     public User get() {
+        return null;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
