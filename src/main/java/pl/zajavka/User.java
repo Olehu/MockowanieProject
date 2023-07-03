@@ -5,16 +5,17 @@ import lombok.Builder;
 import lombok.Value;
 import lombok.With;
 
+@With
 @Value
 @Builder
-@With
-public class User {
+public class User implements Comparable<User> {
     String name;
     String surname;
     String email;
 
-    public User get() {
-        return null;
+    @Override
+    public int compareTo(final User o) {
+        return o.email.compareTo(email);
     }
 
     public String getEmail() {
